@@ -11,6 +11,8 @@ The following material is referenced during the development of this project:
 
 * [API/SigningRequests - Launchpad Help](https://help.launchpad.net/API/SigningRequests)  
   Explains how to sign Launchpad API requests.
+* curl(1) manual page  
+  Explains how to use the command-line options of the curl(1) command.
 
 ## Licensing
 
