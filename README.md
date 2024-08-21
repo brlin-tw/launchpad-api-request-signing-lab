@@ -13,6 +13,8 @@ The following material is referenced during the development of this project:
   Explains how to sign Launchpad API requests.
 * curl(1) manual page  
   Explains how to use the command-line options of the curl(1) command.
+* [Regular expression - Wikipedia](https://en.wikipedia.org/wiki/Regular_expression)  
+  Explains what does the `[:print:]` character class do.
 
 ## Licensing
 
