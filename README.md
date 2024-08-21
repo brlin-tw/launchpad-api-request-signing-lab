@@ -5,6 +5,14 @@ Learning signing Launchpad API requests with shell commands.
 <https://gitlab.com/brlin/launchpad-api-request-signing-lab>  
 [![The GitLab CI pipeline status badge of the project's `main` branch](https://gitlab.com/brlin/launchpad-api-request-signing-lab/badges/main/pipeline.svg?ignore_skipped=true "Click here to check out the comprehensive status of the GitLab CI pipelines")](https://gitlab.com/brlin/launchpad-api-request-signing-lab/-/pipelines) [![GitHub Actions workflow status badge](https://github.com/brlin-tw/launchpad-api-request-signing-lab/actions/workflows/check-potential-problems.yml/badge.svg "GitHub Actions workflow status")](https://github.com/brlin-tw/launchpad-api-request-signing-lab/actions/workflows/check-potential-problems.yml) [![pre-commit enabled badge](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white "This project uses pre-commit to check potential problems")](https://pre-commit.com/) [![REUSE Specification compliance badge](https://api.reuse.software/badge/gitlab.com/brlin/launchpad-api-request-signing-lab "This project complies to the REUSE specification to decrease software licensing costs")](https://api.reuse.software/info/gitlab.com/brlin/launchpad-api-request-signing-lab)
 
+## Usage
+
+1. Pick a consumer key
+1. Get a request token and secret pair by running [the get-request-token.sh program](get-request-token.sh)
+1. Get a access token and secret pair by running [the get-access-token.sh program](get-access-token.sh)
+
+Refer the file header of each program for the accepted input environment variables.
+
 ## References
 
 The following material is referenced during the development of this project:
