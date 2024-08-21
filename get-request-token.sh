@@ -109,7 +109,6 @@ curl_opts=(
     # Don't print progress message but still print error
     --silent
     --show-error
-
 )
 if ! response="$(
     curl "${curl_opts[@]}" https://launchpad.net/+request-token
