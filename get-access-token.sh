@@ -11,6 +11,11 @@ REQUEST_TOKEN="${REQUEST_TOKEN:-unset}"
 # The consumer key you defined from the beginning
 CONSUMER_KEY="${CONSUMER_KEY:-"Just testing"}"
 
+# Whether we should request desktop-integration/system-wide access level
+SYSTEM_WIDE="${SYSTEM_WIDE:-false}"
+OS_NAME="${OS_NAME:-""}"
+HOST_NAME="${HOST_NAME:-""}"
+
 printf \
     'Info: Configuring the defensive interpreter behaviors...\n'
 set_opts=(
@@ -123,7 +128,41 @@ if test "${required_parameter_check_failed}" == true; then
     exit 1
 fi
 
+boolean_regex='^(true|false)$'
+if ! [[ ${boolean_regex} =~ ${SYSTEM_WIDE} ]]; then
+    printf \
+        'Error: The value of the SYSTEM_WIDE parameter(%s) should either be "true" or "false".\n' \
+        "${SYSTEM_WIDE}" \
+        1>&2
+    exit 1
+fi
+
+if test "${SYSTEM_WIDE}" == true; then
+    system_wide_parameter_check_failed=false
+    system_wide_parameters=(
+        OS_NAME
+        HOSTNAME
+    )
+    for parameter in "${system_wide_parameters[@]}"; do
+        if test -z "${!parameter}"; then
+            printf \
+                'Error: This program requires the %s parameter to be not null.\n' \
+                "${parameter}" \
+                1>&2
+            system_wide_parameter_check_failed=true
+        fi
+    done
+    if test "${system_wide_parameter_check_failed}" == true; then
+        printf 'Error: System-wide parameter validation failed.\n' 1>&2
+        exit 1
+    fi
+fi
+
 authorization_url="https://launchpad.net/+authorize-token?oauth_token=${REQUEST_TOKEN}"
+if test "${SYSTEM_WIDE}" == true; then
+    authorization_url+='&allow_permission=DESKTOP_INTEGRATION'
+fi
+
 printf \
     'Info: Please browse the following URL to complete the Launchpad authorization process:\n\n    %s\n\n' \
     "${authorization_url}"
