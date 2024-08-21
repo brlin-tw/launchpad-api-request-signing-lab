@@ -1,0 +1,19 @@
+Info: Configuring the defensive interpreter behaviors...
+Info: Checking the existence of the required commands...
+Info: Configuring the convenience variables...
+Info: Determining the absolute path of the program...
+Info: Setting the ERR trap...
+Info: Checking the runtime parameters...
+Info: Please browse the following URL to complete the Launchpad authorization process:
+
+    https://launchpad.net/+authorize-token?oauth_token=QpjMX95RM2p2MhbD7lvc
+
+Info: Press ENTER when you have completed the authorization process:Info: Please enter the request token secret you got from the get-request-token program: Info: Launchpad has returned the following OAuth token:
+
+    lr1tmjjGSx1xRW3xrHfh
+
+Info: Launchpad has returned the following OAuth token secret:
+
+    x4MSzCH6cRDgPTHKslVfPCPW2CB27jzwtMxdMT4GZ68z8DHqqdTK88nlxPm6FRkXBqPp4xP9ncvLbsvD
+
+Info: Operation completed without errors.
