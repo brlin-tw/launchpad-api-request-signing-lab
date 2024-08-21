@@ -1,0 +1,59 @@
+Info: Configuring the defensive interpreter behaviors...
+Info: Checking the existence of the required commands...
+Info: Configuring the convenience variables...
+Info: Determining the absolute path of the program...
+Info: Setting the ERR trap...
+Info: Checking the runtime parameters...
+Info: Please enter the OAuth token secret you got from the get-access-token program:
+Info: Querying the Unix epoch timestamp...
+Info: Unix epoch timestamp determined to be "1724210861".
+Info: Generating the nonce string...
+Info: Nonce determined to be "6b83faef702d8c4f5e3961a6c8fd17ad".
+Info: Calling Launchpad API...
+Info: API call successful, response:
+{
+  "self_link": "https://api.launchpad.net/beta/bugs/11",
+  "web_link": "https://bugs.launchpad.net/bugs/11",
+  "resource_type_link": "https://api.launchpad.net/beta/#bug",
+  "id": 11,
+  "private": false,
+  "information_type": "Public",
+  "name": null,
+  "title": "Rosetta says there are untranslated strings, but it isn't",
+  "description": "Seems like it's working.\n\nWe had a problem with the statistics so perhaps that was the problem.",
+  "owner_link": "https://api.launchpad.net/beta/~ricardo",
+  "bug_tasks_collection_link": "https://api.launchpad.net/beta/bugs/11/bug_tasks",
+  "duplicate_of_link": null,
+  "date_created": "2004-12-25T00:00:00+00:00",
+  "activity_collection_link": "https://api.launchpad.net/beta/bugs/11/activity",
+  "can_expire": false,
+  "subscriptions_collection_link": "https://api.launchpad.net/beta/bugs/11/subscriptions",
+  "date_last_updated": "2012-01-05T01:32:38.845007+00:00",
+  "who_made_private_link": null,
+  "date_made_private": null,
+  "heat": 6,
+  "bug_watches_collection_link": "https://api.launchpad.net/beta/bugs/11/bug_watches",
+  "cves_collection_link": "https://api.launchpad.net/beta/bugs/11/cves",
+  "vulnerabilities_collection_link": "https://api.launchpad.net/beta/bugs/11/vulnerabilities",
+  "duplicates_collection_link": "https://api.launchpad.net/beta/bugs/11/duplicates",
+  "attachments_collection_link": "https://api.launchpad.net/beta/bugs/11/attachments",
+  "security_related": false,
+  "latest_patch_uploaded": null,
+  "tags": [
+    "lp-translations"
+  ],
+  "date_last_message": "2011-10-14T23:32:03.823166+00:00",
+  "number_of_duplicates": 0,
+  "message_count": 5,
+  "users_affected_count": 0,
+  "users_unaffected_count": 0,
+  "users_affected_collection_link": "https://api.launchpad.net/beta/bugs/11/users_affected",
+  "users_unaffected_collection_link": "https://api.launchpad.net/beta/bugs/11/users_unaffected",
+  "users_affected_count_with_dupes": 0,
+  "other_users_affected_count_with_dupes": 0,
+  "users_affected_with_dupes_collection_link": "https://api.launchpad.net/beta/bugs/11/users_affected_with_dupes",
+  "messages_collection_link": "https://api.launchpad.net/beta/bugs/11/messages",
+  "linked_branches_collection_link": "https://api.launchpad.net/beta/bugs/11/linked_branches",
+  "http_etag": "\"89a767c6a12f72a3021ee9922bf2bbc470f486a3-3a2e65258cf9d751fe8d75d6cde8a264a393a95b\""
+}
+Info: Operation completed without errors.

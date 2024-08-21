@@ -64,3 +64,8 @@ indent_size = 2
 [/LICENSES/*]
 indent_size = unset
 indent_style = unset
+
+# Don't check program output
+[*.out.*]
+indent_size = unset
+indent_style = unset

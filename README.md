@@ -10,6 +10,7 @@ Learning signing Launchpad API requests with shell commands.
 1. Pick a consumer key
 1. Get a request token and secret pair by running [the get-request-token.sh program](get-request-token.sh)
 1. Get a access token and secret pair by running [the get-access-token.sh program](get-access-token.sh)
+1. Test calling the Launchpad API with the OAuth access token and secret pair by running [the test-access-token.sh program](test-access-token.sh)
 
 Refer the file header of each program for the accepted input environment variables.
 
