@@ -9,7 +9,7 @@
 REQUEST_TOKEN="${REQUEST_TOKEN:-unset}"
 
 # The consumer key you defined from the beginning
-CONSUMER_KEY="${CONSUMER_KEY:-unset}"
+CONSUMER_KEY="${CONSUMER_KEY:-"Just testing"}"
 
 printf \
     'Info: Configuring the defensive interpreter behaviors...\n'
@@ -106,7 +106,6 @@ fi
 
 printf 'Info: Checking the runtime parameters...\n'
 required_parameters=(
-    CONSUMER_KEY
     REQUEST_TOKEN
 )
 required_parameter_check_failed=false
